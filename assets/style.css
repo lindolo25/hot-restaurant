@@ -5,7 +5,11 @@
 	padding-top:50px;
 	padding-bottom: 50px;
 }
-p {margin-top: 40px;}
+
+p { margin-top: 40px; }
+
 .bMenu {
     margin-top: 40px;
 }
+
+.card, form { margin-top: 20px }

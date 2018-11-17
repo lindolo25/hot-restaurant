@@ -40,9 +40,12 @@ app.get("/api/tables", function(req, res) {
 });
 
 // Displays a single character, or returns false
-app.post("/api/reserve", function(req, res) {
- console.log(res);
- return res.json(true);
+app.post("/api/reserve", function(req, res) 
+{
+    var newItem = new Reservations(req.body.id, req.body.name, req.body.email, req.body.phone);
+    reservations.push(newItem);
+    if(reservations.length > 4) return res.json(false);
+    else return res.json(true);
 });
 
 // Starts the server to begin listening
