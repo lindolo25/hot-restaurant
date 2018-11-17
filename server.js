@@ -41,7 +41,8 @@ app.get("/api/tables", function(req, res) {
 
 // Displays a single character, or returns false
 app.post("/api/reserve", function(req, res) {
-
+ console.log(res);
+ return res.json(true);
 });
 
 // Starts the server to begin listening
