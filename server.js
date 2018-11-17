@@ -15,7 +15,7 @@ app.use('/assets', express.static('assets'));
 
 // App in-Memory contecnt
 // =============================================================
-var reservations = [];
+var reservations = [{ name: "Ksenia" }];
 
 // Routes
 // =============================================================
@@ -39,6 +39,7 @@ app.get("/api/tables", function(req, res) {
 
 // Displays a single character, or returns false
 app.post("/api/reserve", function(req, res) {
+
 });
 
 // Starts the server to begin listening
