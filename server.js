@@ -15,7 +15,9 @@ app.use('/assets', express.static('assets'));
 
 // App in-Memory contecnt
 // =============================================================
-var reservations = [{ name: "Ksenia" }];
+var reservations = [];
+
+reservations.push(new Reservations(12, "Eddie", "eddie@mail.localhost", "123-234-4567"));
 
 // Routes
 // =============================================================
