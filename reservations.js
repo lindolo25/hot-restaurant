@@ -1,5 +1,5 @@
 // Requiring our Reservation constructor function we exported from castMember.js
-var reservation = require("./reservation");
+// var reservation = require("./reservation");
 
 // Constructor function for creating Movie objects
 var Table = function(ID, Name, Email, Phone) {
